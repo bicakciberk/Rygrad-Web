@@ -164,7 +164,7 @@ p {
 /*producers*/
 #producers {
     margin-top: 20px;
-    height: 750px;
+    height: 100vh;
     background-color: #0c0c0d;
 }
 
@@ -420,6 +420,7 @@ p {
 
     #producers .row:nth-child(2){
         margin-left: 150px;
+        margin-top: -80vh;
     }
 }
 
