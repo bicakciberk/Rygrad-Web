@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto Slab', serif;
+    text-decoration: none;
 }
 
 html {
@@ -165,7 +166,7 @@ p {
 /*producers*/
 #producers {
     margin-top: 20px;
-    height: 100vh;
+    height: 105vh;
     background-color: #0c0c0d;
 }
 
@@ -202,6 +203,7 @@ p {
     display: flex;
     flex-direction: column;
 }
+
 
 /*media queries*/
 @media (max-width: 1200px) {
