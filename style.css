@@ -13,6 +13,7 @@ body {
     overflow-x: hidden;
 }
 
+
 /*navbar*/
 #navbarNav ul li {
     margin-left: 30px;
@@ -56,7 +57,7 @@ button {
     border: none;
 }
 
-button:hover {
+#buy:hover {
     background-color: #18181b;
     color: #eba326;
     transition: 0.5s;
@@ -253,40 +254,40 @@ p {
         justify-content: space-between;
     }
 
-    #producers .cards h2{
+    #producers .cards h2 {
         font-size: 23px
     }
 
-    #producers .cards h6{
+    #producers .cards h6 {
         font-size: 13px;
     }
 
-    #producers h3{
+    #producers h3 {
         font-size: 25px
     }
 
-    #producers p{
+    #producers p {
         font-size: 14px;
     }
 }
 
 @media (max-width: 836px) {
-    #producers .row{
+    #producers .row {
         flex-direction: column;
         justify-content: space-between;
     }
 
-    #producers .row .cards{
+    #producers .row .cards {
         padding: 20px;
     }
 
-    #producers .row:nth-child(2){
+    #producers .row:nth-child(2) {
         border-left: 1px solid #eba326;
         margin-top: -84vh;
         margin-left: 200px;
     }
 
-    #producers{
+    #producers {
         height: 840px;
     }
 }
@@ -377,7 +378,7 @@ p {
         height: 2200px;
     }
 
-    #producers{
+    #producers {
         height: 880px;
     }
 }
@@ -410,15 +411,15 @@ p {
         font-size: 14px;
     }
 
-    #producers section .cards h2{
+    #producers section .cards h2 {
         font-size: 17px
     }
 
-    #producers section .cards H6{
+    #producers section .cards H6 {
         font-size: 13px
     }
 
-    #producers .row:nth-child(2){
+    #producers .row:nth-child(2) {
         margin-left: 150px;
         margin-top: -80vh;
     }
