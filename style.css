@@ -14,7 +14,6 @@ body {
     overflow-x: hidden;
 }
 
-
 /*navbar*/
 #navbarNav ul li {
     margin-left: 30px;
@@ -50,12 +49,13 @@ body {
     margin-top: 70vh;
 }
 
-button {
+#buy {
     background-color: #eba326;
     color: #18181b;
     padding: 15px;
     width: 150px;
     border: none;
+    border-radius: 5px;
 }
 
 #buy:hover {
@@ -63,6 +63,7 @@ button {
     color: #eba326;
     transition: 0.5s;
 }
+
 
 /*marquee*/
 .rygrad {
