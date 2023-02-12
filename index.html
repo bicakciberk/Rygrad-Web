@@ -16,28 +16,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rygrad</title>
-    <style>
-        #loader {
-            height: 100px;
-        }
-
-        .loader {
-            background-color: rgb(3, 1, 0);
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
     </style>
 </head>
 
-<body id="body">
-    <!-- loader -->
-    <div id="loading" class="loader">
-        <span class="img-background"></span>
-        <img id="loader" src="assets/title orange.png">
-    </div>
-    <!-- loader -->
+<body>
     <section id="home">
         <nav class="container-fluid navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="index.html"><img src="assets/Logo1.png"
@@ -374,13 +356,6 @@
                 animation.innerHTML = "Animasyon"
             }
         })
-
-        window.addEventListener("load", function () {
-            const preloader = document.getElementById("loading");
-            preloader.style.display = "none";
-
-    
-        });
 
     </script>
 
