@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="assets/title.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -15,9 +16,28 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rygrad</title>
+    <style>
+        #loader {
+            height: 100px;
+        }
+
+        .loader {
+            background-color: rgb(3, 1, 0);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
 </head>
 
-<body>
+<body id="body">
+    <!-- loader -->
+    <div id="loading" class="loader">
+        <span class="img-background"></span>
+        <img id="loader" src="assets/title orange.png">
+    </div>
+    <!-- loader -->
     <section id="home">
         <nav class="container-fluid navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="index.html"><img src="assets/Logo1.png"
@@ -293,66 +313,74 @@
     </script>
 
     <script>
+        document.getElementById("turkish").addEventListener("click", function () {
+            turkish.onclick = function (translate) {
+                // HOME
+                buy.innerHTML = "<strong>SATIN AL!</strong>"
+                n_home.innerHTML = "Ana Sayfa"
+                n_features.innerHTML = "Özellikler"
+                n_faq.innerHTML = "SSS"
+                n_producers.innerHTML = "Yapımcılar"
+                //WELCOME RYGRAD
+                h_rygrad.innerHTML = "RYGRAD'A HOŞGELDİN"
+                p_rygrad.innerHTML = "Kendiniz veya arkadaşlarınızla, göreviniz hayatta kalmaktır!"
+                soon.innerHTML = "Yakında Gelecek"
+                //FEATURES
+                build.innerHTML = "İnşa Et"
+                p_build.innerHTML = "Hayatta kalmanıza yardımcı olacak hayatta kalma ekipmanı, silahlar, ekin arazileri ve daha fazlasını oluşturun!"
+                dive.innerHTML = "Dalış Yap"
+                p_dive.innerHTML = "Demir atın ve daha fazla kaynak için derinlikleri keşfedin!"
+                farm.innerHTML = "Çiftçilik ve Yemek"
+                p_farm.innerHTML = "Midenizi mutlu etmek için mahsul yetiştirin, hayvanları yakalayın ve onlarla ilgilenin, yemek tarifleri pişirin ve lezzetli yiyecekler yapın."
+                capture.innerHTML = "Ele Geçir"
+                p_capture.innerHTML = "Kralları devirin ve yerlerini alın!"
+                multiplayer.innerHTML = "Çok Oyunculu"
+                p_multiplayer.innerHTML = "Çevrimiçi ortamda tek başınıza veya arkadaşlarınızla hayatta kalın!"
+                //FAQ
+                asked.innerHTML = "SIKÇA SORULAN SORULAR"
+                price.innerHTML = "OYUNUN FİYATI NEDİR ?"
+                p_price.innerHTML = "Fiyat konusunda kesin bir şey söyleyememekle birlikte, Steam'in bize verdiği minimum limit neyse ona göre hareket etmemiz gerektiğini bilmenizi istiyoruz. Bu yüzden olabildiğince Türk oyuncuyu üzmeyecek şekilde ayarlamaya çalışacağız."
+                will.innerHTML = "OYUN NE ZAMAN ÇIKACAK ?"
+                p_will.innerHTML = "2023 Yılında çıkacağını yayınlardan duymuş olanlar vardır. Fakat şunu bilmenizi isteriz ki oyun çıktığında 'ERKEN ERİŞİM' olarak çıkacaktır."
+                story.innerHTML = "OYUNUN HİKAYESİ OLACAK MI?"
+                p_story.innerHTML = "Survival, yani hayatta kalma oyunudur."
+                computer.innerHTML = "HER BİLGİSAYAR KALDIRIR MI?"
+                p_computer.innerHTML = "Çalışmalarımız bu yönde. Optimizasyon, ekibimizin önceliklerinden birisi. Bu konu hakkında aklınızda soru işareti olmasını istemiyoruz."
+                official.innerHTML = "RESMI HESAPLARINIZ VAR MI ?"
+                news.innerHTML = "RYGRAD NEWS NEDİR ?"
+                p_news.innerHTML = "Discord'umuzda bulunan gönüllü arkadaşların haftalık veya günlük olarak çıkarttıkları gazetedir. (Belki bir gün sizin de adınız o gazetede olabilir.)"
+                future.innerHTML = "İLERİDE BAŞKA OYUNLAR YAPILACAK MI ?"
+                p_future.innerHTML = "Evet, planlarımız o yönde ama sizlerin de söylediği gibi 'ileride'."
+                workshop.innerHTML = "STEAM ATÖLYE VE SKIN SATIŞLARI OLACAK MI ?"
+                p_workshop.innerHTML = "Atöyle öğeleri ve oyunu modlama vb. gibi çalışmalarımız olacak fakat erken erişimde yetişir mi bilmiyoruz. Skin satışı konusunda şuan bir bilgi veremiyoruz."
+                boss.innerHTML = "SU ALTI YAŞAMI VE BOSSLARI OLACAK MI ?"
+                p_boss.innerHTML = "Oyuna Boss eklemeleri yapılacak fakat kesin olmamakla birlikte plan aşamasında olduğunu bilmenizi isteriz. Su altı yaşamı konusunda kesin bir bilgi veremiyoruz."
+                single.innerHTML = "TEK MAP Mİ OLACAK ?"
+                p_single.innerHTML = "Hayır random olarak bir kaç tane mapimiz olacak ve sizler bunları seçebilecek veya random olarak oynayabileceksiniz."
+                weapon.innerHTML = "OYUNDA SİLAH OLACAK MI ?"
+                p_weapon.innerHTML = "Oyunumuz Medieval (Orta Çağ) temasında olacağı için ateşli silahlar bulunmayacaktır. Bunun yerine Yay - Arbalet - Scorpion - Catapult gibi bir çok orta çağ temasına uygun silahlar bulunacaktır."
+                ship.innerHTML = "GEMİ SİSTEMİ VE DENİZ SAVAŞLARI NASIL OLACAK ?"
+                p_ship.innerHTML = "Level sistemi ile geminizi oluşturabileceksiniz, örneğin seviye 1 Sal ise seviye 3 gemi gibi. Deniz savaşları konusunda da geminize ekleyeceğiniz bir kaç silah ile saldırı ve savunma yapabileceksiniz."
+                //Producers
+                producer.innerHTML = "Yapımcılar"
+                p_producer.innerHTML = "Rygrad oyununun yapımında emeği geçenler;"
+                captain.innerHTML = "Kaptan"
+                developer.innerHTML = "Geliştirici"
+                authorities.innerHTML = "Yetkililer"
+                moderator.innerHTML = "Moderatör"
+                tester.innerHTML = "Testçi"
+                artist.innerHTML = "3D Sanatçı"
+                designer.innerHTML = "Arayüz Tasarımcısı"
+                animation.innerHTML = "Animasyon"
+            }
+        })
 
-        turkish.onclick = function () {
-            // HOME
-            buy.innerHTML = "<strong>SATIN AL!</strong>"
-            n_home.innerHTML = "Ana Sayfa"
-            n_features.innerHTML = "Özellikler"
-            n_faq.innerHTML = "SSS"
-            n_producers.innerHTML = "Yapımcılar"
-            //WELCOME RYGRAD
-            h_rygrad.innerHTML = "RYGRAD'A HOŞGELDİN"
-            p_rygrad.innerHTML = "Kendiniz veya arkadaşlarınızla, göreviniz hayatta kalmaktır!"
-            soon.innerHTML = "Yakında Gelecek"
-            //FEATURES
-            build.innerHTML = "İnşa Et"
-            p_build.innerHTML = "Hayatta kalmanıza yardımcı olacak hayatta kalma ekipmanı, silahlar, ekin arazileri ve daha fazlasını oluşturun!"
-            dive.innerHTML = "Dalış Yap"
-            p_dive.innerHTML = "Demir atın ve daha fazla kaynak için derinlikleri keşfedin!"
-            farm.innerHTML = "Çiftçilik ve Yemek"
-            p_farm.innerHTML = "Midenizi mutlu etmek için mahsul yetiştirin, hayvanları yakalayın ve onlarla ilgilenin, yemek tarifleri pişirin ve lezzetli yiyecekler yapın."
-            capture.innerHTML = "Ele Geçir"
-            p_capture.innerHTML = "Kralları devirin ve yerlerini alın!"
-            multiplayer.innerHTML = "Çok Oyunculu"
-            p_multiplayer.innerHTML = "Çevrimiçi ortamda tek başınıza veya arkadaşlarınızla hayatta kalın!"
-            //FAQ
-            asked.innerHTML = "SIKÇA SORULAN SORULAR"
-            price.innerHTML = "OYUNUN FİYATI NEDİR ?"
-            p_price.innerHTML = "Fiyat konusunda kesin bir şey söyleyememekle birlikte, Steam'in bize verdiği minimum limit neyse ona göre hareket etmemiz gerektiğini bilmenizi istiyoruz. Bu yüzden olabildiğince Türk oyuncuyu üzmeyecek şekilde ayarlamaya çalışacağız."
-            will.innerHTML = "OYUN NE ZAMAN ÇIKACAK ?"
-            p_will.innerHTML = "2023 Yılında çıkacağını yayınlardan duymuş olanlar vardır. Fakat şunu bilmenizi isteriz ki oyun çıktığında 'ERKEN ERİŞİM' olarak çıkacaktır."
-            story.innerHTML = "OYUNUN HİKAYESİ OLACAK MI?"
-            p_story.innerHTML = "Survival, yani hayatta kalma oyunudur."
-            computer.innerHTML = "HER BİLGİSAYAR KALDIRIR MI?"
-            p_computer.innerHTML = "Çalışmalarımız bu yönde. Optimizasyon, ekibimizin önceliklerinden birisi. Bu konu hakkında aklınızda soru işareti olmasını istemiyoruz."
-            official.innerHTML = "RESMI HESAPLARINIZ VAR MI ?"
-            news.innerHTML = "RYGRAD NEWS NEDİR ?"
-            p_news.innerHTML = "Discord'umuzda bulunan gönüllü arkadaşların haftalık veya günlük olarak çıkarttıkları gazetedir. (Belki bir gün sizin de adınız o gazetede olabilir.)"
-            future.innerHTML = "İLERİDE BAŞKA OYUNLAR YAPILACAK MI ?"
-            p_future.innerHTML = "Evet, planlarımız o yönde ama sizlerin de söylediği gibi 'ileride'."
-            workshop.innerHTML = "STEAM ATÖLYE VE SKIN SATIŞLARI OLACAK MI ?"
-            p_workshop.innerHTML = "Atöyle öğeleri ve oyunu modlama vb. gibi çalışmalarımız olacak fakat erken erişimde yetişir mi bilmiyoruz. Skin satışı konusunda şuan bir bilgi veremiyoruz."
-            boss.innerHTML = "SU ALTI YAŞAMI VE BOSSLARI OLACAK MI ?"
-            p_boss.innerHTML = "Oyuna Boss eklemeleri yapılacak fakat kesin olmamakla birlikte plan aşamasında olduğunu bilmenizi isteriz. Su altı yaşamı konusunda kesin bir bilgi veremiyoruz."
-            single.innerHTML = "TEK MAP Mİ OLACAK ?"
-            p_single.innerHTML = "Hayır random olarak bir kaç tane mapimiz olacak ve sizler bunları seçebilecek veya random olarak oynayabileceksiniz."
-            weapon.innerHTML = "OYUNDA SİLAH OLACAK MI ?"
-            p_weapon.innerHTML = "Oyunumuz Medieval (Orta Çağ) temasında olacağı için ateşli silahlar bulunmayacaktır. Bunun yerine Yay - Arbalet - Scorpion - Catapult gibi bir çok orta çağ temasına uygun silahlar bulunacaktır."
-            ship.innerHTML = "GEMİ SİSTEMİ VE DENİZ SAVAŞLARI NASIL OLACAK ?"
-            p_ship.innerHTML = "Level sistemi ile geminizi oluşturabileceksiniz, örneğin seviye 1 Sal ise seviye 3 gemi gibi. Deniz savaşları konusunda da geminize ekleyeceğiniz bir kaç silah ile saldırı ve savunma yapabileceksiniz."
-            //Producers
-            producer.innerHTML = "Yapımcılar"
-            p_producer.innerHTML = "Rygrad oyununun yapımında emeği geçenler;"
-            captain.innerHTML ="Kaptan"
-            developer.innerHTML ="Geliştirici"
-            authorities.innerHTML ="Yetkililer"
-            moderator.innerHTML ="Moderatör"
-            tester.innerHTML ="Testçi"
-            artist.innerHTML ="3D Sanatçı"
-            designer.innerHTML ="Arayüz Tasarımcısı"
-            animation.innerHTML ="Animasyon"
-        }
+        window.addEventListener("load", function () {
+            const preloader = document.getElementById("loading");
+            preloader.style.display = "none";
+
+    
+        });
 
     </script>
 
