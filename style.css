@@ -112,6 +112,8 @@ p {
     margin-top: -10px;
     background-color: #0c0c0d;
     height: 2500px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #features .row {
@@ -132,6 +134,7 @@ p {
 }
 
 #features img {
+    box-shadow: 10px 10px #18181b;
     width: 550px;
     height: auto;
     border-radius: 10px;
@@ -142,6 +145,7 @@ p {
     margin-top: 20px;
     height: 1700px;
     background-color: #0c0c0d;
+    /* background-color: #eba326; */
 }
 
 #faq .row {
@@ -156,7 +160,7 @@ p {
     font-size: 35px;
     display: flex;
     justify-content: center;
-    color: #fefefe;
+    color: #eba326;
 }
 
 #faq h2 {
@@ -168,16 +172,18 @@ p {
 #producers {
     margin-top: 20px;
     height: 105vh;
-    background-color: #0c0c0d;
+    background-image: url(assets/Untitled.png);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #producers h3 {
     font-size: 35px;
-    color: #eba326;
+    color: #e2a439;
 }
 
 #producers .row h2 {
-    color: #eba326;
+    color: #e2a439;
     font-size: 30px;
 }
 
@@ -210,6 +216,10 @@ p {
 @media (max-width: 1200px) {
     #faq {
         height: 1800px;
+    }
+
+    #producers{
+        background-size: 100% 100%;
     }
 }
 
@@ -311,6 +321,7 @@ p {
     #welcome {
         background-size: 165% 100%;
     }
+
 }
 
 @media (max-width: 562px) {
@@ -356,6 +367,10 @@ p {
 
     #faq {
         height: 2100px;
+    }
+
+    #producers{
+        background-size: 110% 100%;
     }
 }
 
@@ -445,8 +460,8 @@ p {
         background-position: center;
     }
 
-    /* #producers .row:nth-child(2){
-        margin-left: 140px;
-    } */
+    #producers{
+        background-size: 105% 100%;
+    }
 
 }
