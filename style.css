@@ -6,6 +6,28 @@
     text-decoration: none;
 }
 
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #eba326 #0c0c0d;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #0c0c0d;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #eba326;
+    border-radius: 10px;
+    border: 1px none #651010;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -202,7 +224,7 @@ p {
 }
 
 #producers .cards {
-    padding: 50px;
+    padding: 25px 0px 0px 20px;
 }
 
 #producers .items {
@@ -218,7 +240,7 @@ p {
         height: 1800px;
     }
 
-    #producers{
+    #producers {
         background-size: 100% 100%;
     }
 }
@@ -369,7 +391,7 @@ p {
         height: 2100px;
     }
 
-    #producers{
+    #producers {
         background-size: 110% 100%;
     }
 }
@@ -460,7 +482,7 @@ p {
         background-position: center;
     }
 
-    #producers{
+    #producers {
         background-size: 105% 100%;
     }
 
