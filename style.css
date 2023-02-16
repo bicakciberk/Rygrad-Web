@@ -229,8 +229,9 @@ p {
 
 /*media queries*/
 @media (max-width: 1200px) {
-    #faq {
-        height: 1800px;
+    .active{
+        opacity: 1;
+        max-height: 75px;
     }
 
     #producers {
@@ -243,15 +244,7 @@ p {
         justify-content: center;
         flex-direction: column;
     }
-
-    #faq {
-        height: 1900px;
-    }
-
-    #features {
-        height: 3300px;
-    }
-
+    
     #features .row {
         flex-direction: column;
     }
@@ -315,13 +308,12 @@ p {
         margin-left: 200px;
     }
 
-    #producers {
-        height: 840px;
+    #producers{
+        height: 850px;
     }
 }
 
 @media (max-width: 768px) {
-
     #faq h2,
     h3 {
         font-size: 20px;
@@ -336,7 +328,6 @@ p {
     #welcome {
         background-size: 165% 100%;
     }
-
 }
 
 @media (max-width: 562px) {
@@ -376,16 +367,13 @@ p {
         width: 270px;
     }
 
-    #features {
-        height: 2800px;
-    }
-
-    #faq {
-        height: 2100px;
-    }
-
     #producers {
         background-size: 110% 100%;
+    }
+
+    .active{
+        opacity: 1;
+        max-height: 90px;
     }
 }
 
@@ -393,10 +381,6 @@ p {
     #features img {
         width: 350px;
         height: auto;
-    }
-
-    #features {
-        height: 2600px;
     }
 
     #features h2 {
@@ -407,12 +391,9 @@ p {
         font-size: 15px;
     }
 
-    #faq {
-        height: 2200px;
-    }
-
-    #producers {
-        height: 880px;
+    .active{
+        opacity: 1;
+        max-height: 90px;
     }
 }
 
@@ -430,10 +411,6 @@ p {
         display: flex;
         justify-content: center;
         width: 300px;
-    }
-
-    #faq {
-        height: 2200px;
     }
 
     #faq h2 {
@@ -455,6 +432,11 @@ p {
     #producers .row:nth-child(2) {
         margin-left: 150px;
         margin-top: -80vh;
+    }
+
+    .active{
+        opacity: 1;
+        max-height: 130px;
     }
 }
 
