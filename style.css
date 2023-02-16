@@ -86,27 +86,12 @@ body {
     transition: 0.5s;
 }
 
-
-/*marquee*/
-.rygrad {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    font-size: 30px;
-    letter-spacing: 5rem;
-}
-
-marquee H2 {
-    margin-top: 0px;
-}
-
-
 /* welcome */
 #welcome {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 70vh;
     margin-top: -10px;
     background: url(assets/build\ background.png);
     background-position: center;
@@ -133,7 +118,7 @@ p {
 #features {
     margin-top: -10px;
     background-color: #0c0c0d;
-    height: 2500px;
+    padding-bottom: 70px;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -163,36 +148,44 @@ p {
 }
 
 /*faq*/
-#faq {
-    margin-top: 20px;
-    height: 1700px;
+#faq{
     background-color: #0c0c0d;
-    /* background-color: #eba326; */
+    padding-bottom: 100px;
 }
 
-#faq .row {
-    display: flex;
-    flex-direction: column;
-    padding-top: 40px;
+.faq{
+    margin-top: 50px;
     border-bottom: 1px solid #eba326;
 }
 
-#faq h3 {
-    padding: 20px;
-    font-size: 35px;
-    display: flex;
-    justify-content: center;
-    color: #eba326;
+#asked{
+    text-align: center;
+    color: #fefefe;
 }
 
-#faq h2 {
-    font-size: 25px;
+.question h2{
     color: #eba326;
+    font-size: 25px;
 }
+
+.question{
+    cursor: pointer;
+}
+
+.answer{
+    opacity: 0;
+    max-height: 0;
+    transition: 0.5s;
+}
+
+.active{
+    opacity: 1;
+    max-height: 55px;
+}
+
 
 /*producers*/
 #producers {
-    margin-top: 20px;
     height: 105vh;
     background-image: url(assets/Untitled.png);
     background-size: cover;
@@ -230,9 +223,9 @@ p {
 #producers .items {
     padding: 30px;
     display: flex;
+    text-align: center;
     flex-direction: column;
 }
-
 
 /*media queries*/
 @media (max-width: 1200px) {
