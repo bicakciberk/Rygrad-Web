@@ -250,7 +250,7 @@ p {
 }
 
 #producers .cards {
-    padding: 25px 0px 0px 20px;
+    padding: 30px 0px 60px 20px;
 }
 
 #producers .items {
@@ -258,6 +258,23 @@ p {
     display: flex;
     text-align: center;
     flex-direction: column;
+}
+
+.data-answer{
+    cursor: pointer;
+    max-height: 0px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.data-target{
+    cursor: pointer;
+}
+
+.data-active{
+    max-height: 50px;
+    transition: 0.5s;
+    opacity: 1;
 }
 
 #berk {
@@ -318,11 +335,6 @@ p {
 }
 
 @media (max-width: 942px) {
-    #producers .row:nth-child(2) {
-        display: flex;
-        justify-content: space-between;
-    }
-
     #producers .cards h2 {
         font-size: 23px
     }
@@ -340,29 +352,6 @@ p {
     }
 }
 
-@media (max-width: 836px) {
-    #producers .row {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: -200px;
-    }
-
-    #producers .row .cards {
-        padding: 10px;
-
-    }
-
-    #producers .row:nth-child(2) {
-        margin-top: -75vh;
-        margin-left: 200px;
-    }
-
-    #developer {
-        margin-top: 20px;
-    }
-
-}
 
 @media (max-width: 768px) {
 
@@ -379,6 +368,14 @@ p {
 
     #welcome {
         background-size: 165% 100%;
+    }
+
+    #producers .cards h2 {
+        font-size: 18px
+    }
+
+    #producers .cards h6 {
+        font-size: 10px;
     }
 }
 
@@ -403,6 +400,10 @@ p {
     #faq h3 {
         font-size: 25px;
     }
+
+    #berk{
+        padding-top: 70px;
+    }
 }
 
 @media (max-width: 464px) {
@@ -426,10 +427,17 @@ p {
         width: 270px;
     }
 
-    
     .active {
         opacity: 1;
         max-height: 90px;
+    }
+
+    #producers .cards h2 {
+        font-size: 15px
+    }
+
+    #producers .cards h6 {
+        font-size: 10px;
     }
 }
 
@@ -453,16 +461,28 @@ p {
         opacity: 1;
         max-height: 90px;
     }
+
 }
 
 @media (max-width: 384px) {
-
     #home {
         background: url(assets/rygrad374.png);
         background-size: cover;
         background-position-x: center;
         background-attachment: fixed;
 
+    }
+
+    #berk p,a{
+        font-size: 13px;
+    }
+
+    #producers h3{
+        font-size: 20px;
+    }
+
+    #producers p{
+        font-size: 13px;
     }
 
     #features h2 {
@@ -490,25 +510,17 @@ p {
         font-size: 14px;
     }
 
-    #producers section .cards h2 {
-        font-size: 15px
-    }
-
-    #producers section .cards H6 {
-        font-size: 13px
-    }
-
     .active {
         opacity: 1;
         max-height: 130px;
     }
 
-    #producers .row:nth-child(2) {
-        margin-left: 170px;
+    #producers .cards h2 {
+        font-size: 13px;
     }
 }
 
-@media (max-width: 336px) {
+@media (max-width: 340px) {
     #faq p {
         font-size: 13px;
     }
@@ -531,4 +543,23 @@ p {
         background-size: 105% 100%;
     }
 
+    #producers .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #producers .row:nth-child(2){
+        margin-left: 190px;
+        margin-top: -255px;
+    }
+
+    #producers .cards {
+        padding: 20px 0px 20px 20px;
+    }
+
+    #berk{
+        padding: 90px;
+        width: 400px;
+    }
+  
 }
