@@ -91,12 +91,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 70vh;
     margin-top: 1px;
     background: url(assets/build\ background.png);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    padding: 64px 0px 64px;
 }
 
 #welcome .row {
@@ -118,13 +118,13 @@ p {
 #features {
     margin-top: 1px;
     background-color: #0c0c0d;
-    padding-bottom: 100px;
+    padding: 64px 0px 64px;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #features .row {
-    padding-top: 150px;
+    padding: 50px 0px 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -148,39 +148,40 @@ p {
 }
 
 /*faq*/
-#faq{
+#faq {
     margin-top: 1px;
     background-color: #0c0c0d;
-    padding-bottom: 100px;
+    padding-top: 64px;
+    padding-bottom: 64px;
 }
 
-.faq{
-    margin-top: 50px;
+.faq {
+    margin: 50px 0px;
     border-bottom: 1px solid #eba326;
 }
 
-#asked{
+#asked {
     padding: 15px;
     text-align: center;
     color: #fefefe;
 }
 
-.question h2{
+.question h2 {
     color: #eba326;
     font-size: 25px;
 }
 
-.question{
+.question {
     cursor: pointer;
 }
 
-.answer{
+.answer {
     opacity: 0;
     max-height: 0;
     transition: 0.5s;
 }
 
-.active{
+.active {
     opacity: 1;
     max-height: 55px;
 }
@@ -189,10 +190,10 @@ p {
 /*producers*/
 #producers {
     margin-top: 1px;
-    height: 105vh;
     background-image: url(assets/Untitled.png);
     background-size: cover;
     background-attachment: fixed;
+    padding: 64px 0px 64px;
 }
 
 #producers h3 {
@@ -230,20 +231,20 @@ p {
     flex-direction: column;
 }
 
-#berk{
+#berk {
     padding-top: 3%;
     display: flex;
     justify-content: center;
 }
 
-#berk a{
+#berk a {
     color: #eba326;
     text-decoration: none;
 }
 
 /*media queries*/
 @media (max-width: 1200px) {
-    .active{
+    .active {
         max-height: 75px;
     }
 
@@ -251,7 +252,7 @@ p {
         background-size: 100% 100%;
     }
 
-    #features .container p{
+    #features .container p {
         width: 350px;
     }
 }
@@ -261,7 +262,7 @@ p {
         justify-content: center;
         flex-direction: column;
     }
-    
+
     #features .row {
         flex-direction: column;
     }
@@ -318,20 +319,23 @@ p {
     }
 
     #producers .row .cards {
-        padding: 20px;
+        padding: 10px;
+
     }
 
     #producers .row:nth-child(2) {
-        margin-top: -84vh;
+        margin-top: -75vh;
         margin-left: 200px;
     }
 
-    #producers{
-        height: 135vh;
+    #developer {
+        margin-top: 20px;
     }
+
 }
 
 @media (max-width: 768px) {
+
     #faq h2,
     h3 {
         font-size: 20px;
@@ -389,7 +393,7 @@ p {
         background-size: 110% 100%;
     }
 
-    .active{
+    .active {
         opacity: 1;
         max-height: 90px;
     }
@@ -411,17 +415,9 @@ p {
         font-size: 15px;
     }
 
-    .active{
+    .active {
         opacity: 1;
         max-height: 90px;
-    }
-
-    #producers{
-        height: 140vh;
-    }
-
-    #producers .row:nth-child(2){
-        margin-top: -80vh;
     }
 }
 
@@ -452,25 +448,20 @@ p {
     }
 
     #producers section .cards h2 {
-        font-size: 17px
+        font-size: 15px
     }
 
     #producers section .cards H6 {
         font-size: 13px
     }
 
-    #producers .row:nth-child(2) {
-        margin-left: 150px;
-        margin-top: -80vh;
-    }
-
-    .active{
+    .active {
         opacity: 1;
         max-height: 130px;
     }
 
-    #producers{
-        height: 145vh;
+    #producers .row:nth-child(2){
+        margin-left: 170px;
     }
 }
 
