@@ -244,12 +244,15 @@ p {
 /*media queries*/
 @media (max-width: 1200px) {
     .active{
-        opacity: 1;
         max-height: 75px;
     }
 
     #producers {
         background-size: 100% 100%;
+    }
+
+    #features .container p{
+        width: 350px;
     }
 }
 
@@ -308,8 +311,10 @@ p {
 
 @media (max-width: 836px) {
     #producers .row {
+        display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        align-items: center;
+        margin-left: -200px;
     }
 
     #producers .row .cards {
@@ -317,7 +322,6 @@ p {
     }
 
     #producers .row:nth-child(2) {
-        border-left: 1px solid #eba326;
         margin-top: -84vh;
         margin-left: 200px;
     }
@@ -398,10 +402,12 @@ p {
     }
 
     #features h2 {
+        margin-left: 40px;
         font-size: 30px;
     }
 
     #features p {
+        margin-left: 40px;
         font-size: 15px;
     }
 
@@ -409,16 +415,26 @@ p {
         opacity: 1;
         max-height: 90px;
     }
+
+    #producers{
+        height: 140vh;
+    }
+
+    #producers .row:nth-child(2){
+        margin-top: -80vh;
+    }
 }
 
 @media (max-width: 384px) {
     #features h2 {
         font-size: 27px;
+        margin-left: -24px;
     }
 
-    #features p {
+    #features .container p {
         font-size: 14px;
         width: 200px;
+        margin-left: -24px;
     }
 
     #features img {
