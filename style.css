@@ -260,23 +260,6 @@ p {
     flex-direction: column;
 }
 
-.data-answer {
-    cursor: pointer;
-    max-height: 0px;
-    opacity: 0;
-    transition: 0.5s;
-}
-
-.data-target {
-    cursor: pointer;
-}
-
-.data-active {
-    max-height: 50px;
-    transition: 0.5s;
-    opacity: 1;
-}
-
 #berk {
     padding-top: 3%;
     display: flex;
@@ -527,6 +510,7 @@ p {
     #producers .cards h2 {
         font-size: 13px;
     }
+
 }
 
 @media (max-width: 340px) {
@@ -547,7 +531,7 @@ p {
     #welcome {
         background-position: center;
     }
-    
+
     #producers .row {
         display: flex;
         flex-direction: column;
@@ -555,7 +539,7 @@ p {
 
     #producers .row:nth-child(2) {
         margin-left: 190px;
-        margin-top: -255px;
+        margin-top: -250px;
     }
 
     #producers .cards {
@@ -574,6 +558,23 @@ p {
     #features h2 {
 
         margin-left: 0px;
+    }
+
+    .data-answer {
+        cursor: pointer;
+        max-height: 0px;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .data-target {
+        cursor: pointer;
+    }
+
+    .data-active {
+        max-height: 50px;
+        transition: 0.5s;
+        opacity: 1;
     }
 
 }
