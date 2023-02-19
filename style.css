@@ -250,7 +250,7 @@ p {
 }
 
 #producers .cards {
-    padding: 30px 0px 60px 20px;
+    padding: 60px 0px 60px 20px;
 }
 
 #producers .items {
@@ -267,6 +267,15 @@ p {
 }
 
 #berk a {
+    color: #eba326;
+    text-decoration: none;
+}
+
+.items h4{
+    color: #fefefe;
+}
+
+.items h4 a{
     color: #eba326;
     text-decoration: none;
 }
@@ -333,11 +342,17 @@ p {
     #producers p {
         font-size: 14px;
     }
+
+    .items h4{
+        font-size: 23px
+    }
+    
+    .items h4 a{
+        font-size: 23px;
+    }
 }
 
-
 @media (max-width: 768px) {
-
     #faq h2,
     h3 {
         font-size: 20px;
@@ -359,6 +374,14 @@ p {
 
     #producers .cards h6 {
         font-size: 10px;
+    }
+
+    .items h4{
+        font-size: 18px
+    }
+    
+    .items h4 a{
+        font-size: 18px;
     }
 }
 
@@ -430,6 +453,14 @@ p {
     #producers .cards h6 {
         font-size: 10px;
     }
+
+    .items h4{
+        font-size: 13px
+    }
+    
+    .items h4 a{
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 424px) {
@@ -461,7 +492,6 @@ p {
         background-size: cover;
         background-position-x: center;
         background-attachment: fixed;
-
     }
 
     #berk p,
@@ -511,6 +541,9 @@ p {
         font-size: 13px;
     }
 
+    #producers .cards {
+        padding: 60px 0px 60px 10px;
+    }
 }
 
 @media (max-width: 340px) {
@@ -539,7 +572,7 @@ p {
 
     #producers .row:nth-child(2) {
         margin-left: 190px;
-        margin-top: -250px;
+        margin-top: -255px;
     }
 
     #producers .cards {
@@ -556,7 +589,6 @@ p {
     }
 
     #features h2 {
-
         margin-left: 0px;
     }
 
