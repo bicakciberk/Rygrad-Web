@@ -146,7 +146,11 @@ p {
 /*features*/
 #features {
     margin-top: 1px;
-    background-color: #0c0c0d;
+    /* background-color: #0c0c0d; */
+    background: url(assets/asdasdasd.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     padding: 64px 0px 64px;
 }
 

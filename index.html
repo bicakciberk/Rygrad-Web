@@ -372,52 +372,52 @@
         </div>
     </section>
 
-    <script src="https://unpkg.com/scrollreveal">
-    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/three.js"></script>
     <script>
-        ScrollReveal().reveal('.headline', { delay: 700 });
-        ScrollReveal().reveal('.question', { delay: 700 });
+                ScrollReveal().reveal('.headline', {delay: 700 });
+                ScrollReveal().reveal('.question', {delay: 700 });
 
-        //loading animation
-        window.addEventListener("load", function () {
+                //loading animation
+                window.addEventListener("load", function () {
             const loader = document.querySelector(".loader");
-            loader.className += " fadeOut";
+                loader.className += " fadeOut";
         });
 
-        let questions = document.querySelectorAll('.question');
-        let answer = document.querySelectorAll('.answer');
+                let questions = document.querySelectorAll('.question');
+                let answer = document.querySelectorAll('.answer');
 
         questions.forEach((question) => {
-            question.addEventListener('click', () => {
-                question.nextElementSibling.classList.toggle('active');
-            });
+                    question.addEventListener('click', () => {
+                        question.nextElementSibling.classList.toggle('active');
+                    });
         });
 
 
-        const targetElems = document.querySelectorAll('.data-target');
+                const targetElems = document.querySelectorAll('.data-target');
 
         targetElems.forEach(target => {
-            target.addEventListener('click', () => {
-                const answer = target.nextElementSibling;
-                if (answer.classList.contains('data-active')) {
-                    answer.classList.remove('data-active');
-                } else {
-                    answer.classList.add('data-active');
-                }
-            });
+                    target.addEventListener('click', () => {
+                        const answer = target.nextElementSibling;
+                        if (answer.classList.contains('data-active')) {
+                            answer.classList.remove('data-active');
+                        } else {
+                            answer.classList.add('data-active');
+                        }
+                    });
         });
 
-        const button = document.querySelector("#buy");
-        let lastScrollTop = 0;
+                const button = document.querySelector("#buy");
+                let lastScrollTop = 0;
 
-        window.addEventListener("scroll", function () {
-            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                window.addEventListener("scroll", function () {
+                    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
             if (scrollTop > lastScrollTop) {
-                button.style.display = "none";
+                    button.style.display = "none";
             } else {
-                button.style.display = "block";
+                    button.style.display = "block";
             }
-            lastScrollTop = scrollTop;
+                lastScrollTop = scrollTop;
         });
 
     </script>
